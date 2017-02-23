@@ -18,6 +18,11 @@ done
 
 projectDir='../'${projectName}
 mkdir ${projectDir}
+mkdir ${projectDir}'/client'
+
+clientSrcDir=${projectDir}'/client/src'
+mkdir ${clientSrcDir}
+
 cp example-.gitignore ${projectDir}'/.gitignore'
 
 cd ${projectDir}
