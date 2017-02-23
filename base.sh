@@ -22,10 +22,15 @@ mkdir ${projectDir}'/client'
 
 clientSrcDir=${projectDir}'/client/src'
 mkdir ${clientSrcDir}
+cp -r example-global ${clientSrcDir}'/global'
 
 cp example-.gitignore ${projectDir}'/.gitignore'
 
 cd ${projectDir}
 npm init
+git init
+
+git add client/src/global/web-api.js
+git commit -a -m 'add web-api.js'
 
 cd ${currentDir}
