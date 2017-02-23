@@ -29,8 +29,12 @@ cp example-.gitignore ${projectDir}'/.gitignore'
 cd ${projectDir}
 npm init
 git init
+typings init
 
 git add client/src/global/web-api.js
 git commit -a -m 'add web-api.js'
+
+git add typings.json
+git commit -a -m 'use typings'
 
 cd ${currentDir}
