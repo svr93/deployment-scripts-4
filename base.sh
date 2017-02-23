@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+currentDir=$(pwd)
+
 # default project name
 projectName='__new-project__'
 
@@ -17,3 +19,8 @@ done
 projectDir='../'${projectName}
 mkdir ${projectDir}
 cp example-.gitignore ${projectDir}'/.gitignore'
+
+cd ${projectDir}
+npm init
+
+cd ${currentDir}
