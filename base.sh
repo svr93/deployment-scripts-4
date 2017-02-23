@@ -16,3 +16,4 @@ done
 
 projectDir='../'${projectName}
 mkdir ${projectDir}
+cp example-.gitignore ${projectDir}'/.gitignore'
