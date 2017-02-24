@@ -32,6 +32,7 @@ cp example-.babelrc ${projectDir}'/.babelrc'
 cp example-.eslintrc ${projectDir}'/.eslintrc'
 cp example-.eslintignore ${projectDir}'/.eslintignore'
 cp example-gulpfile.js ${projectDir}'/gulpfile.js'
+cp example-.bowerrc ${projectDir}'/.bowerrc'
 
 cd ${projectDir}
 
@@ -99,5 +100,9 @@ npm i --save-dev gulp-babel
 echo '/server/www/' >> .gitignore
 
 git commit -a -m 'process JS in gulpfile'
+
+echo '/client/src/vendor' >> .gitignore
+git add .bowerrc
+git commit -a -m 'add bowerrc'
 
 cd ${currentDir}
