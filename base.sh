@@ -28,6 +28,7 @@ cp example-requirejs-config.js ${clientSrcDir}'/requirejs-config.js'
 
 cp example-.gitignore ${projectDir}'/.gitignore'
 cp example-karma.conf.js ${projectDir}'/karma.conf.js'
+cp example-.babelrc ${projectDir}'/.babelrc'
 
 cd ${projectDir}
 
@@ -67,5 +68,13 @@ git add test-client/test-main.js
 git add test-client/jasmine-env.js
 git add karma.conf.js
 git commit -a -m 'add test frameworks'
+
+npm i --save-dev karma-babel-preprocessor
+npm i --save-dev babel-plugin-transform-es2015-arrow-functions
+npm i --save-dev babel-plugin-transform-es2015-block-scoping
+npm i --save-dev babel-plugin-transform-es2015-shorthand-properties #IE11
+
+git add .babelrc
+git commit -a -m 'add Babel support'
 
 cd ${currentDir}
