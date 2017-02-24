@@ -6,3 +6,4 @@
 3) disable Code style issues -> Unterminated statement
 4) disable General -> last comma in array/object literal
 5) enable Node.js core library
+6) change STATIC_PORT and LIVERELOAD_PORT
