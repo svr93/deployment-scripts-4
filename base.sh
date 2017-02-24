@@ -118,4 +118,14 @@ bower i --save bluebird
 typings i --save dt~bluebird
 git commit -a -m 'add Bluebird'
 
+bower i --save angular#1.5.9
+bower i --save angular-mocks#1.5.9
+typings i --save dt~angular
+
+bower i --save angular-ui-router#0.3
+bower i --save ui-router-extras
+typings i --save dt~angular-ui-router
+
+git commit -a -m 'add Angular.JS'
+
 cd ${currentDir}

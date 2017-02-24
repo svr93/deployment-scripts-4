@@ -1,5 +1,14 @@
 /* global __karma__ */
 
+/*
+    eslint-disable
+    requirejs/no-named-define,
+    requirejs/no-invalid-define
+*/
+
+// eslint-disable-next-line no-undef
+document.body.appendChild(document.createElement('app'))
+
 requirejs.config({
 
     baseUrl: 'base/client/src',
@@ -14,6 +23,7 @@ requirejs.config({
             return item.match(new RegExp([
 
                 'global/web-api.js',
+                'vendor/ui-router-extras/',
             ].join('|'))) // + all non-AMD libs
         }),
     callback: function() {
@@ -26,6 +36,8 @@ requirejs.config({
                 return item.match(new RegExp('test-client/')) &&
                     !item.match(new RegExp('test-main.js'))
             })
+        define('angular-ui-router', 'ct.ui.router.extras')
+
         requirejs(testFileList, __karma__.start)
     },
 })

@@ -11,6 +11,12 @@ module.exports = function(config) {
     const vendorPathList = [
 
         'vendor/bluebird/js/browser/bluebird.min',
+
+        'vendor/angular/angular.min',
+        'vendor/angular-ui-router/release/angular-ui-router.min',
+        'vendor/ui-router-extras/release/ct-ui-router-extras.min',
+
+        'vendor/angular-mocks/angular-mocks',
     ]
         .map((item) => {
 
@@ -26,7 +32,7 @@ module.exports = function(config) {
                  * True for all non-AMD libs
                  * @param {boolean}
                  */
-                included: false,
+                included: item.includes('vendor/angular')
             }
         })
     const optionData = {
