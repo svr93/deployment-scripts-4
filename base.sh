@@ -109,4 +109,9 @@ bower init
 git add bower.json
 git commit -a -m 'initialize bower'
 
+bower i --save-dev requirejs
+bower i --save almond
+typings i --save --global dt~require
+git commit -a -m 'add Require.JS'
+
 cd ${currentDir}
