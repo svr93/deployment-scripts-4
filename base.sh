@@ -114,4 +114,8 @@ bower i --save almond
 typings i --save --global dt~require
 git commit -a -m 'add Require.JS'
 
+bower i --save bluebird
+typings i --save dt~bluebird
+git commit -a -m 'add Bluebird'
+
 cd ${currentDir}

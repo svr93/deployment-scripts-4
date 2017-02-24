@@ -10,6 +10,7 @@ module.exports = function(config) {
 
     const vendorPathList = [
 
+        'vendor/bluebird/js/browser/bluebird.min',
     ]
         .map((item) => {
 
