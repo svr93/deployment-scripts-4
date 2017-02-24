@@ -105,4 +105,8 @@ echo '/client/src/vendor' >> .gitignore
 git add .bowerrc
 git commit -a -m 'add bowerrc'
 
+bower init
+git add bower.json
+git commit -a -m 'initialize bower'
+
 cd ${currentDir}
