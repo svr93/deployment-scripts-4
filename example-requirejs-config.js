@@ -12,6 +12,8 @@ window.requirejs = {
         'text': 'vendor/text/text',
 
         'selector-alias': 'vendor/selector-alias/selector-alias',
+        $$: 'app/util/selector',
+        throttle: 'app/util/throttle',
     },
     shim: {
 

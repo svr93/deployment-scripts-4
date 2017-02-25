@@ -23,6 +23,7 @@ mkdir ${projectDir}'/client'
 clientSrcDir=${projectDir}'/client/src'
 mkdir ${clientSrcDir}
 cp -r example-global ${clientSrcDir}'/global'
+cp -r example-app ${clientSrcDir}'/app'
 cp -r example-test-client ${projectDir}'/test-client'
 cp example-requirejs-config.js ${clientSrcDir}'/requirejs-config.js'
 cp example-main.js ${clientSrcDir}'/main.js'
@@ -141,5 +142,10 @@ git commit -a -m 'add selector-alias'
 git add 'client/src/main.js'
 git add 'client/index.html'
 git commit -a -m 'add index.html & Require.JS config'
+
+git add 'client/src/app/util/selector.js'
+git add 'client/src/app/util/throttle.js'
+
+git commit -a -m 'add util libs'
 
 cd ${currentDir}
