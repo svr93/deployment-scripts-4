@@ -25,6 +25,8 @@ mkdir ${clientSrcDir}
 cp -r example-global ${clientSrcDir}'/global'
 cp -r example-test-client ${projectDir}'/test-client'
 cp example-requirejs-config.js ${clientSrcDir}'/requirejs-config.js'
+cp example-main.js ${clientSrcDir}'/main.js'
+cp example-index.html ${projectDir}'/client/index.html'
 
 cp example-.gitignore ${projectDir}'/.gitignore'
 cp example-karma.conf.js ${projectDir}'/karma.conf.js'
@@ -135,5 +137,9 @@ git commit -a -m 'add Require.JS plugins'
 
 bower i --save selector-alias
 git commit -a -m 'add selector-alias'
+
+git add 'client/src/main.js'
+git add 'client/index.html'
+git commit -a -m 'add index.html & Require.JS config'
 
 cd ${currentDir}
