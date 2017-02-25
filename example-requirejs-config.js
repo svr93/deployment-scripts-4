@@ -8,6 +8,8 @@ window.requirejs = {
         angular: 'vendor/angular/angular.min',
         '_angular-ui-router': 'vendor/angular-ui-router/release/angular-ui-router.min',
         '_ui-router-extras': 'vendor/ui-router-extras/release/ct-ui-router-extras.min',
+
+        'text': 'vendor/text/text',
     },
     shim: {
 
@@ -17,5 +19,6 @@ window.requirejs = {
     },
     map: {
 
+        '*': { 'css': 'vendor/require-css/css' },
     },
 }

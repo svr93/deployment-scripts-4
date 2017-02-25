@@ -17,6 +17,9 @@ module.exports = function(config) {
         'vendor/ui-router-extras/release/ct-ui-router-extras.min',
 
         'vendor/angular-mocks/angular-mocks',
+
+        'vendor/text/text',
+        'vendor/require-css/css',
     ]
         .map((item) => {
 

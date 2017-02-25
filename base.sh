@@ -128,4 +128,9 @@ typings i --save dt~angular-ui-router
 
 git commit -a -m 'add Angular.JS'
 
+bower i --save text
+bower i --save require-css
+
+git commit -a -m 'add Require.JS plugins'
+
 cd ${currentDir}
