@@ -20,6 +20,8 @@ module.exports = function(config) {
 
         'vendor/text/text',
         'vendor/require-css/css',
+
+        'vendor/selector-alias/selector-alias',
     ]
         .map((item) => {
 

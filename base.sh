@@ -133,4 +133,7 @@ bower i --save require-css
 
 git commit -a -m 'add Require.JS plugins'
 
+bower i --save selector-alias
+git commit -a -m 'add selector-alias'
+
 cd ${currentDir}
