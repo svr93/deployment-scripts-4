@@ -68,6 +68,8 @@ module.exports = function(config) {
         ],
         preprocessors: {
 
+            // Disabled because of 'Unexpected token :' error
+            // 'client/src/**/*.сss': [ 'css' ],
             'client/src/**/*.js': [ 'babel' ],
         },
     }

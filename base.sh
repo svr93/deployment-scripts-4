@@ -148,4 +148,9 @@ git add 'client/src/app/util/throttle.js'
 
 git commit -a -m 'add util libs'
 
+npm i --save-dev gulp-postcss
+npm i --save-dev postcss-css-variables
+npm i --save-dev karma-postcss-preprocessor
+git commit -a -m 'process CSS in gulpfile'
+
 cd ${currentDir}
