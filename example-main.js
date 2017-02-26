@@ -15,5 +15,7 @@ requirejs.config({
         "use strict";
 
         define('angular-ui-router', 'ct.ui.router.extras')
+
+        requirejs([ 'app/app' ])
     },
 })

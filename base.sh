@@ -153,4 +153,9 @@ npm i --save-dev postcss-css-variables
 npm i --save-dev karma-postcss-preprocessor
 git commit -a -m 'process CSS in gulpfile'
 
+git add 'client/src/app/common/*'
+git add 'client/src/app/router-components/*'
+git add 'client/src/app/app*.*'
+git commit -a -m 'create base app structure'
+
 cd ${currentDir}
