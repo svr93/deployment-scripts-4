@@ -4,9 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy"
           content="connect-src 'self' ws://localhost:*; script-src 'self' http://localhost:*">
-
+    <!-- build:js -->
     <script src="src/requirejs-config.js"></script>
     <script data-main="src/main" src="src/vendor/requirejs/require.js"></script>
+    <!-- endbuild -->
+    <!-- build:css -->
+    <!-- endbuild -->
 </head>
 <body ng-csp="no-unsafe-eval">
     <app></app>

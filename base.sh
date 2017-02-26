@@ -158,4 +158,10 @@ git add 'client/src/app/router-components/*'
 git add 'client/src/app/app*.*'
 git commit -a -m 'create base app structure'
 
+npm i --save-dev gulp-concat
+npm i --save-dev gulp-requirejs-optimize
+npm i --save-dev gulp-closure-compiler-service
+npm i --save-dev gulp-html-replace
+git commit -a -m 'optimize source'
+
 cd ${currentDir}

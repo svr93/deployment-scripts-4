@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-undef
-window.requirejs = {
+let requirejs = {
 
     paths: {
 
