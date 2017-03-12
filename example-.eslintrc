@@ -4,6 +4,7 @@
 
     "comma-dangle": [ "error", "always-multiline" ],
     "no-restricted-globals": [ "error", "JSON", "Math" ],
+    "no-unused-vars": [ "error", { "varsIgnorePattern": "^T[A-Z]{1}" } ],
 
     "requirejs/no-object-define": "error",
     "requirejs/no-named-define": "error",

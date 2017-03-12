@@ -36,6 +36,7 @@ cp example-.eslintrc ${projectDir}'/.eslintrc'
 cp example-.eslintignore ${projectDir}'/.eslintignore'
 cp example-gulpfile.js ${projectDir}'/gulpfile.js'
 cp example-.bowerrc ${projectDir}'/.bowerrc'
+cp example-typedefs.js ${projectDir}'/typedefs.js'
 
 cd ${projectDir}
 
@@ -163,5 +164,8 @@ npm i --save-dev gulp-requirejs-optimize
 npm i --save-dev gulp-closure-compiler-service
 npm i --save-dev gulp-html-replace
 git commit -a -m 'optimize source'
+
+git add typedefs.js
+git commit -a -m 'add typedefs.js'
 
 cd ${currentDir}
