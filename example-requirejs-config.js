@@ -3,6 +3,7 @@ let requirejs = {
     paths: {
 
         bluebird: 'vendor/bluebird/js/browser/bluebird.min',
+        'keyboardevent-key-polyfill': 'vendor/keyboardevent-key-polyfill/index',
 
         angular: 'vendor/angular/angular.min',
         '_angular-ui-router': 'vendor/angular-ui-router/release/angular-ui-router.min',

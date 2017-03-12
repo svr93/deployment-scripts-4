@@ -8,10 +8,13 @@
 define([
 
     'bluebird',
-], (Promise) => {
+    'keyboardevent-key-polyfill',
+], (Promise, keyboardeventKeyPolyfill) => {
     "use strict";
 
     window.Promise = Promise
+    //noinspection JSUnresolvedFunction
+    keyboardeventKeyPolyfill.polyfill()
 
     // ES6 module system should help us avoid yet more
     // such global namespace-object additions.

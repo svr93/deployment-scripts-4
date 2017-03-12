@@ -11,6 +11,7 @@ module.exports = function(config) {
     const vendorPathList = [
 
         'vendor/bluebird/js/browser/bluebird.min',
+        'vendor/keyboardevent-key-polyfill/index',
 
         'vendor/angular/angular.min',
         'vendor/angular-ui-router/release/angular-ui-router.min',

@@ -168,4 +168,9 @@ git commit -a -m 'optimize source'
 git add typedefs.js
 git commit -a -m 'add typedefs.js'
 
+# https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
+# polyfill for old Chrome
+bower i --save https://github.com/cvan/keyboardevent-key-polyfill.git#1.0.2
+git commit -a -m 'keyboardevent-key-polyfill'
+
 cd ${currentDir}
